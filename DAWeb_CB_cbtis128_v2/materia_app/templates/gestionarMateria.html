@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block title %} Gestion materias  {% endblock %}
+
+{% block cuerpo  %}
+<h1> Gestionar materias Alondra Ramirez </h1>
+{% for m in lasmaterias %}
+
+<li> {{ m.codigo }}  .-.-.-.- {{ m.nombre }} .-.-.-.- {{ m.creditos }} </li>
+
+{% endfor %}
+
+
+{% endblock %}
